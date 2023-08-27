@@ -1,0 +1,8 @@
+FROM python:3.8
+
+COPY client.py /app/client.py
+RUN pip install requests
+
+WORKDIR /app
+
+CMD ["python", "client.py"]
